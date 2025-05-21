@@ -38,14 +38,14 @@ public class DatoGeneral {
         this.email = email;
     }
     public void registrar() {
-        System.out.println("Registro de datos generales:");
+        System.out.println("Registro de datos generales: Clase madre");
         System.out.println("Nombre: " + nombre);
         System.out.println("Dirección: " + direccion);
         System.out.println("Teléfono: " + telefono);
         System.out.println("Email: " + email);
     }
     public void modificar() {
-        System.out.println("Modificación de datos generales:");
+        System.out.println("Modificación de datos generales: Clase madre");
         System.out.println("Nombre: " + nombre);
         System.out.println("Dirección: " + direccion);
         System.out.println("Teléfono: " + telefono);
