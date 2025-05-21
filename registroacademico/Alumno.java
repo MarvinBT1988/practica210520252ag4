@@ -22,5 +22,12 @@ public class Alumno extends DatoGeneral {
     public void setEncargado(String encargado) {
         this.encargado = encargado;
     }
-    
+    public void verNotas() {
+        System.out.println("Notas del alumno " + getNombre() + ":");
+        // Aquí se pueden mostrar las notas del alumno
+    }
+    public void entregarTareas() {
+        System.out.println("Entrega de tarea del alumno " + getNombre() + ":");
+        // Aquí se puede implementar la lógica para entregar una tarea
+    }
 }
