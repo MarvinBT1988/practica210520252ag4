@@ -1,6 +1,6 @@
 package registroacademico;
 
-public class Alumno extends DatoGeneral implements ISearch {
+public class Alumno extends DatoGeneral implements ISearch, ICRUD {
     private String nCarnet;
     private String encargado;
     public Alumno() {
@@ -52,5 +52,15 @@ public class Alumno extends DatoGeneral implements ISearch {
         System.out.println("Obteniendo todos los alumnos:");
         // Aquí se puede implementar la lógica para obtener todos los alumnos
     }
+    @Override
+    public int create() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+    @Override
+    public int read() {
+        // TODO Auto-generated method stub
+        return 0;
+    }   
    
 }

@@ -1,5 +1,5 @@
 import registroacademico.Alumno;
-import registroacademico.DatoGeneral;
+import registroacademico.ISearch;
 import registroacademico.Maestro;
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +14,11 @@ public class Main {
         maestro.setDireccion("Avenida 456");
         maestro.registrar();
         maestro.modificar();
-
+        ver(alumno);
     
+    }
+    public static void ver(ISearch iSearch ){
+        iSearch.obtenerTodos();
+        iSearch.obtenerPorId(1);        
     }
 }
