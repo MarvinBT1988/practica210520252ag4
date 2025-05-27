@@ -3,30 +3,12 @@
   "features": {
     "ghcr.io/devcontainers/features/java": {
       "version": "21"
-    },
-    "ghcr.io/devcontainers/features/mssql": {
-      "version": "latest",
-      "acceptEula": true,
-      "SA_PASSWORD": "yourStrong(!)Password"
     }
   },
-  "portsAttributes": {
-    "1433": {
-      "label": "SQL Server",
-      "onAutoForward": "openPreview"
-    },
-    "8080": {
-      "label": "Aplicación Java",
-      "onAutoForward": "openPreview"
-    }
-  },
-  "forwardPorts": [1433, 8080],
-  "postCreateCommand": "echo 'SQL Server y JDK 21 instalados en el Codespace!'",
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode.vscode-java-pack",
-        "ms-mssql.mssql"
+        "ms-vscode.vscode-java-pack"
       ]
     }
   }
